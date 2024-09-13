@@ -62,7 +62,6 @@ describe("POST /items", () => {
     expect(response.body.added.name).toEqual("Taco");
     expect(response.body.added.price).toEqual(0);
   });
-
   test("Returns 500 for missing name", async () => {
     const response = await request(app)
       .post(`/items`)
@@ -102,7 +101,6 @@ describe("PATCH /items/:name", () => {
       .send({
         name: "Troll"
       });
-
     expect(response.statusCode).toBe(200);
     expect(response.body.updated).toEqual({
       name: "Troll",
@@ -117,7 +115,6 @@ describe("PATCH /items/:name", () => {
     const response = await request(app)
       .patch(`/items/${item.name}`)
       .send({ price: 300 });
-      console.log(response.body);
     expect(response.statusCode).toBe(200);
     expect(response.body.updated).toEqual({
       name: item.name,
