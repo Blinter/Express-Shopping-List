@@ -1,0 +1,25 @@
+{
+  "name": "express-shopping-list",
+  "version": "1.0.0",
+  "description": "For this exercise we will be building a simple JSON API application where we will store a shopping list. You should use an array to store your items in the shopping list.",
+  "main": "app.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Blinter/Express-Shopping-List.git"
+  },
+  "author": "Blinter",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Blinter/Express-Shopping-List/issues"
+  },
+  "homepage": "https://github.com/Blinter/Express-Shopping-List#readme",
+  "dependencies": {
+    "express": "^4.21.0"
+  },
+  "devDependencies": {
+    "supertest": "^7.0.0"
+  }
+}
